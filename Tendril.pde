@@ -19,9 +19,16 @@ myNumSegments = len;
   }
   public void show()
   {
-    for(int i = 0; i<myNumSegments; i++)
+    startX = myX;
+startY = myY;
+for(int i = 0; i<myNumSegments; i++)
 {
-    line(myX, myY, myX+(SEG_LENGTH*Math.cos(theta)), myY+(SEG_LENGTH*Math.sin(theta)));
+    myAngle+=Math.random()*0.4-0.2;
+endX=startX+Math.cos(myAngle)*SEG_LENGTH;
+endY=startY+Math.sin(myAngle)*SEG_LENGTH;
+line(startX, startY, endX, endY);
+startX = endX;
+startY = endY;
 }
   }
 }
