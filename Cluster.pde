@@ -4,6 +4,6 @@ public class Cluster
 
     public Cluster(int len, int x, int y)
     {
-        // your code here
+        new Tendril(len, x, y);
     }
 }
