@@ -15,9 +15,13 @@ class Tendril
     myAngle = theta;
     myX=x;
     myY=y;
+myNumSegments = len;
   }
   public void show()
   {
+    for(int i = 0; i<myNumSegments; i++)
+{
     line(myX, myY, myX+(SEG_LENGTH*Math.cos(theta)), myY+(SEG_LENGTH*Math.sin(theta)));
+}
   }
 }
