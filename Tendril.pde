@@ -32,7 +32,7 @@ public class Tendril
     }
     if (myNumSegments>=1)
     {
-      Cluster(myNumSegments-1, startX, startY);
+      Cluster(myNumSegments-1, endX, endY);
     }
   }
 }
