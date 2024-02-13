@@ -34,7 +34,7 @@ public class Tendril
     {
       return;
     } else {
-      new Cluster(myNumSegments/5, startX, startY);
+      new Cluster(myNumSegments/4, startX, startY);
     }
   }
 }
