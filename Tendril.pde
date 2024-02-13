@@ -30,9 +30,9 @@ public class Tendril
       startX = endX;
       startY = endY;
     }
-    if (myNumSegments>=1)
+    if (myNumSegments>=3)
     {
-      Cluster(myNumSegments-1, endX, endY);
+      Cluster(myNumSegments-1, startX, startY);
     }
   }
 }
