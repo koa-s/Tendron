@@ -6,7 +6,7 @@ public class Cluster
   {
     for (int i = 1; i<=NUM_STEMS; i++)
     {
-      new Tendril(len, i*2*PI/7, x, y).show();
+      new Tendril(len, i*2*PI/7, x, y, color((int)(Math.random()*255), (int)(Math.random()*255), (int)(Math.random()*255))).show();
     }
   }
 }
