@@ -10,7 +10,7 @@ public class Tendril
    theta is tendril starting angle in radians 
    x, y  is the starting (x,y) coordinate
    */
-  public Tendril(int len, double theta, int x, int y, int lineColor)
+  public Tendril(int len, double theta, int x, int y, color lineColor)
   {
     myAngle = theta;
     myX=x;
