@@ -2,7 +2,7 @@ public class Tendril
 {
   public final static int SEG_LENGTH = 4; //length of each segment in the tendril
   private int myNumSegments, myX, myY;
-  //color pigment;
+  color pigment;
   private double myAngle;
 
   /**
@@ -11,20 +11,19 @@ public class Tendril
    theta is tendril starting angle in radians 
    x, y  is the starting (x,y) coordinate
    */
-  public Tendril(int len, double theta, int x, int y)
-  //, color lineColor  
+  public Tendril(int len, double theta, int x, int y, color lineColor)
   {
     myAngle = theta;
     myX=x;
     myY=y;
     myNumSegments = len;
-    //pigment = lineColor;
+    pigment = lineColor;
   }
   public void show()
   {
     int startX = myX;
     int startY = myY;
-    //stroke(pigment);
+    stroke(pigment);
     for (int i = 0; i<myNumSegments; i++)
     {
       myAngle+=Math.random()*0.4-0.2;
@@ -34,11 +33,11 @@ public class Tendril
       startX = endX;
       startY = endY;
     }
-    if (myNumSegments<3)
+    if (myNumSegments<6)
     {
       return;
     } else {
-      new Cluster(myNumSegments/2, startX, startY);
+         new Cluster(myNumSegments/3, startX, startY);
     }
   }
 }
